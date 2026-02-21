@@ -11,7 +11,7 @@ param akvName string = 'akv-${uniqueString(resourceGroup().id)}'
 
 // Optional params
 @description('The region to deploy the cluster. By default this will use the same region as the resource group.')
-param location string = eastus2
+param location string = 'eastus2'
 
 @minValue(1)
 @maxValue(50)
