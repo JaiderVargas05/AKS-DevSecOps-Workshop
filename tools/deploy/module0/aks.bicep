@@ -11,7 +11,7 @@ param akvName string = 'akv-${uniqueString(resourceGroup().id)}'
 
 // Optional params
 @description('The region to deploy the cluster. By default this will use the same region as the resource group.')
-param location string = 'eastus'
+param location string = 'brazilsouth'
 
 @minValue(1)
 @maxValue(50)
@@ -19,7 +19,7 @@ param location string = 'eastus'
 param agentCount int = 1
 
 @description('VM size availability varies by region. If a node contains insufficient compute resources (memory, cpu, etc) pods might fail to run correctly. For more details on restricted VM sizes, see: https://docs.microsoft.com/azure/aks/quotas-skus-regions')
-param agentVMSize string = 'standard_d2_v3'
+param agentVMSize string = 'Standard_D2s_v3'
 
 // create azure container registry
 resource acr 'Microsoft.ContainerRegistry/registries@2023-01-01-preview' = {
