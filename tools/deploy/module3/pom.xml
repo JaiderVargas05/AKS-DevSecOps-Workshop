@@ -18,7 +18,7 @@
             Dependency Versions
         -->
         <jetty.version>12.1.7</jetty.version>
-        <log4j.version>2.17.2</log4j.version>
+        <log4j.version>2.18.0</log4j.version>
 
         <!--
             Properties used to create a CD style version number for the Maven build
